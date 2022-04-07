@@ -1,4 +1,4 @@
-// this extern block links to the libm library
+// this extern block links to the libc library
 #[link(name = "c")]
 extern {
     // this is a foreign function

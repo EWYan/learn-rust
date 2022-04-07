@@ -15,3 +15,6 @@ learn rust notes
 - case2-filerw
 > try to read file contents from file  
 > and write modified contents to new file
+
+- case3-calcrc
+> try to calculate large binary file's checksum

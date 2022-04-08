@@ -17,4 +17,7 @@ learn rust notes
 > and write modified contents to new file
 
 - case3-calcrc
-> try to calculate large binary file's checksum
+> try to calculate large binary file's checksum  
+
+- case4-jsonparser
+> try to parser input json files

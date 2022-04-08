@@ -12,8 +12,19 @@ fn main() {
     let n = io::copy(&mut file, &mut hasher).unwrap();
     let hash = hasher.finalize();
     println!("binary hash({:x?}) :{:x?}", n,hash);
+    /* evaluate GenericArray value & print */
+    let mut cnt = 0_i8;
+    for ar in hash.iter() {
+        cnt += 1;
+        if cnt%8 == 0 {
+            println!("0x{:2x}", ar);
+        } else {
+            print!("0x{:2x} ",ar);
+        }
+    }
     let base64_hash = Base64::encode_string(&hash);
     println!("Base64-encoded hash: {:?}", base64_hash);
+    // assert_eq!(hash[2], 0x32);
 
 }
 /* 

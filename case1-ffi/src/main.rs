@@ -3,7 +3,7 @@
 mod ffi;
 
 #[link(name = "c")]
-extern {
+extern "C" {
     // this is a foreign function
     fn abs(z: i32) -> i32;
 }
@@ -30,4 +30,4 @@ fn main() {
 
 //abs(-123) = 123
 
-use crate::ffi::{good_job, cool};
+use crate::ffi::{cool, good_job};

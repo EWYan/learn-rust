@@ -6,7 +6,5 @@ extern "C" {
 }
 
 pub fn cool() -> bool {
-    unsafe {
-        nice() != 0
-    }
+    unsafe { nice() != 0 }
 }
